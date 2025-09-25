@@ -16,8 +16,7 @@ cd /tmp
 ```
 > `/tmp` is the temporary directory on Linux which clear automatically when the system reboots. We gonna download and compile files which we don't need them in far future.
 
-<br>Replace `3.13.7` with the version you need:
-Download and extract python
+<br>Download and extract python<br>Replace `3.13.7` with the version you need:
 ```
 wget https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tgz
 tar -xf Python-3.13.7.tgz
