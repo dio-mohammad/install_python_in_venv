@@ -1,5 +1,6 @@
 # install_python_in_venv
 This repository provides step-by-step instructions to install and use a specific Python version inside a virtual environment (venv) on Ubuntu.
+<br><br>
 
 # Steps:
 ## 1. Update & Install Dependencies
@@ -7,6 +8,7 @@ This repository provides step-by-step instructions to install and use a specific
 sudo apt update
 sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev wget
 ```
+<br><br>
 
 ## 2. Download & Compile a Specific Python Version
 ```
@@ -30,13 +32,28 @@ sudo make altinstall
 ```
 > We use `make altinstall` instead of `make install` to avoid overwriting the system’s default `python3`.
 
+<br><br>
+
 ## 3. Create a Virtual Environment
 You can name your venv. Here i ues `myenv`.
 ```
 python3.10 -m venv myenv
 ```
+<br><br>
+
+## 4. Activate the Environment
+```
+source myenv/bin/activate
+```
+<br><br>
 
 ## 5. Verify Python Version
 ```
 python --version
+```
+<br><br>
+
+## 6. Deactivate the Environment
+```
+deactivate
 ```
