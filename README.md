@@ -10,6 +10,7 @@ sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncu
 ```
 
 ## 2. Download & Compile a Specific Python Version
+Replace `3.13.7` with the version you need:
 ```bash
 
 cd /tmp
@@ -19,4 +20,16 @@ cd Python-3.13.7
 ./configure --enable-optimizations
 make -j$(nproc)
 sudo make altinstall
+```
+> Use `make altinstall` instead of `make install` to avoid overwriting the system’s default `python3`.
+
+## 3. Create a Virtual Environment
+You can name your venv. Here i ues `myenv`.
+```bash
+python3.10 -m venv myenv
+```
+
+## 5. Verify Python Version
+```bash
+python --version
 ```
