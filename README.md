@@ -2,7 +2,7 @@
 This repository provides step-by-step instructions to install and use a specific Python version inside a virtual environment (venv) on Ubuntu.
 
 # Steps:
-## 1. Install Dependencies
+## 1. Update & Install Dependencies
 ```bash
 
 sudo apt update
@@ -14,6 +14,9 @@ Replace `3.13.7` with the version you need:
 ```bash
 
 cd /tmp
+```
+> `/tnp` is the temporary directory on Linux which clear automatically when the system reboots. We gonna download and compile files which we don't need them in futur.
+```bash
 wget https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tgz
 tar -xf Python-3.13.7.tgz
 cd Python-3.13.7
