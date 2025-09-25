@@ -10,7 +10,7 @@ sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncu
 ```
 <br><br>
 
-## 2. Download & Compile a Specific Python Version
+## 2. Download & Compile an Specific Python Version
 ```
 cd /tmp
 ```
