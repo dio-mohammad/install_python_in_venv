@@ -15,13 +15,13 @@ Replace `3.13.7` with the version you need:
 cd /tmp
 ```
 > `/tnp` is the temporary directory on Linux which clear automatically when the system reboots. We gonna download and compile files which we don't need them in far future.
-<br>
-```bash
+<br><br>
+```
 wget https://www.python.org/ftp/python/3.13.7/Python-3.13.7.tgz
 tar -xf Python-3.13.7.tgz
 ```
 > Download and extract python
-<br>
+<br><br>
 ```
 cd Python-3.13.7
 ./configure --enable-optimizations
